@@ -1,0 +1,122 @@
+body {
+  display: flex;
+  align-items: flex;
+  justify-content: center;
+}
+body .flag {
+  width: 900px;
+  height: 600px;
+  margin: 300px;
+  position: relative;
+}
+body .main-down {
+  display: inline-flex;
+  align-items: center;
+  transform: rotate(0deg);
+}
+body .gun {
+  margin-right: 75px;
+  width: 100px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12.5px;
+}
+body .gun div {
+  background-color: black;
+}
+body .gon {
+  margin-left: 75px;
+  width: 100px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 12.5px;
+}
+body .gon div {
+  background-color: black;
+}
+body .circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  background-color: #0047A0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+body .red-outer {
+  position: absolute;
+  background-color: #CD2E3A;
+  width: 300px;
+  height: 150px;
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  top: 0;
+  z-index: 20;
+}
+body .red-inner {
+  position: absolute;
+  background-color: #CD2E3A;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  top: 50%;
+  z-index: 20;
+}
+body .blue-inner {
+  position: absolute;
+  background-color: #0047A0;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  z-index: 20;
+}
+body .main-up {
+  position: absolute;
+  left: 0;
+  display: inline-flex;
+  align-items: center;
+  z-index: -1;
+  transform: rotate(0deg);
+}
+body .yee {
+  margin-right: 75px;
+  width: 100px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 12.5px;
+  grid-auto-flow: column;
+}
+body .yee div {
+  background-color: black;
+}
+body .yee :first-child, body .yee :last-child {
+  grid-row: span 2;
+}
+body .gam {
+  margin-left: 75px;
+  width: 100px;
+  height: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 12.5px;
+  grid-auto-flow: column;
+}
+body .gam div {
+  background-color: black;
+}
+body .gam :nth-child(3) {
+  grid-row: span 2;
+}
+
+/*# sourceMappingURL=index.css.map */

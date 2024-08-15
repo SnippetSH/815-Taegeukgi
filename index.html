@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="flag">
+        <div class="tmp">
+            <div class="main-down">
+                <div class="gun">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="circle">
+                    <div class="red-outer">
+                        <div class="red-inner"></div>
+                    </div>
+                    <div class="blue-inner"></div>
+                </div>
+                <div class="gon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="main-up">
+                <div class="yee">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="circle"></div>
+                <div class="gam">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const degree = Math.acos(3 / Math.sqrt(13));
+        const degreeInDegrees = degree * (180 / Math.PI);
+        const element = document.getElementsByClassName('main-down').item(0);
+        if(element) {
+            element.style.transform = `rotate(${degreeInDegrees}deg)`;
+        }
+
+        const element2 = document.getElementsByClassName('main-up').item(0);
+        if(element2) {
+            element2.style.transform = `rotate(-${degreeInDegrees}deg)`;
+        }
+    </script>
+</body>
+</html>

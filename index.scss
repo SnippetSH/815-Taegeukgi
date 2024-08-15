@@ -1,0 +1,145 @@
+body {
+    $ratioOne: 300px;
+    $blue: 	#0047A0;
+    $red: 	#CD2E3A;
+    display: flex;
+    align-items: flex;
+    justify-content: center;
+
+    .flag {
+        width: calc($ratioOne * 3);
+        height: calc($ratioOne * 2);
+        margin: 300px;
+        position: relative;
+        
+    }
+
+    .main-down {
+        display: inline-flex;
+        align-items: center;
+        transform: rotate(0deg);
+    }
+
+    .gun {
+        margin-right: calc($ratioOne / 4);
+        width: calc($ratioOne / 3);
+        height: calc($ratioOne / 2);
+        // background-color: aqua;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: calc($ratioOne / 24);
+
+        div {
+            background-color: black;
+        }
+    }
+    
+    .gon {
+        margin-left: calc($ratioOne / 4);
+        width: calc($ratioOne / 3);
+        height: calc($ratioOne / 2);
+        // background-color: aqua;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: calc($ratioOne / 24);
+
+        div {
+            background-color: black;
+        }
+    }
+
+    .circle {
+        width: $ratioOne;
+        height: $ratioOne;
+        border-radius: calc($ratioOne / 2);
+        background-color: $blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+
+    .red-outer {
+        position: absolute;
+        background-color: $red;
+        width: $ratioOne;
+        height: calc($ratioOne / 2);
+        border-top-left-radius: calc($ratioOne / 2);
+        border-top-right-radius: calc($ratioOne / 2);
+        top: 0;
+        z-index: 20;
+    }
+
+    .red-inner {
+        position: absolute;
+        background-color: $red;
+        width: calc($ratioOne / 2);
+        height: calc($ratioOne / 2);
+        border-radius: calc($ratioOne / 4);
+        top: 50%;
+        z-index: 20;
+    }
+
+    .blue-inner {
+        position: absolute;
+        background-color: $blue;
+        width: calc($ratioOne / 2);
+        height: calc($ratioOne / 2);
+        border-radius: calc($ratioOne / 4);
+        top: 50%;
+        transform: translateY(-50%);
+        left: 50%;
+        z-index: 20;
+    }
+
+    .main-up {
+        position: absolute;
+        left: 0;
+        display: inline-flex;
+        align-items: center;
+        z-index: -1;
+        transform: rotate(0deg);
+    }
+
+    .yee {
+        margin-right: calc($ratioOne / 4);
+        width: calc($ratioOne / 3);
+        height: calc($ratioOne / 2);
+        //background-color: aqua;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: calc($ratioOne / 24);
+        grid-auto-flow: column;
+
+        div {
+            background-color: black;
+        }
+    }
+    .yee :first-child, .yee :last-child {
+        grid-row: span 2;
+    }
+
+    .gam {
+        margin-left: calc($ratioOne / 4);
+        width: calc($ratioOne / 3);
+        height: calc($ratioOne / 2);
+        //background-color: aqua;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: calc($ratioOne / 24);
+        grid-auto-flow: column;
+
+        div {
+            background-color: black;
+        }
+    }
+
+    .gam :nth-child(3) {
+        grid-row: span 2;
+    }
+    
+}
